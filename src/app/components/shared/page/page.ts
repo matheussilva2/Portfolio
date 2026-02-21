@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from "../../../../../node_modules/@angular/router/types/_router_module-chunk";
+import { Header } from "../header/header";
+import { RouterOutlet } from "@angular/router";
 
 @Component({
   selector: 'app-page',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, Header],
   templateUrl: './page.html',
   styleUrl: './page.css',
 })
