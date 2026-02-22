@@ -21,7 +21,7 @@
     <app-section-link url="https://www.linkedin.com/in/matheus-silva1/" label="Meu Linkedin &gt;" class="mx-auto" />
 </app-section-container>
 
-<app-section-container class="flex flex-row items-center gap-8 md:px-16">
+<app-section-container class="flex flex-col md:flex-row items-center gap-8 md:px-16">
     <div class="flex-1 text-center md:text-left">
         <app-section-title>Tecnologias que uso na criação de aplicações modernas</app-section-title>
         <app-section-description>
@@ -61,7 +61,7 @@
             Tenho anos de construção de soluções web. Sempre aprendendo através da contribuição.
         </app-section-description>
     </div>
-    <div class="flex flex-row items-center gap-8 mt-15">
+    <div class="flex flex-col md:flex-row items-center gap-8 mt-15">
         <div class="max-w-152">
             @for (experience of my_experiences; track $index) {
                 <app-experience-card
@@ -78,12 +78,12 @@
     </div>
 </app-section-container>
 
-<app-section-container id="contact" class="text-center">
+<app-section-container id="contact" class="text-center bg-[#030A04] text-white">
     <app-section-title>Contato</app-section-title>
     <app-section-description>
         Se interessou? Entre em contato e podemos agendar uma reunião para nos conhecermos melhor!
     </app-section-description>
-    <div class="flex justify-center gap-2">
+    <div class="flex justify-center gap-2 mb-5">
         <app-section-link url="https://wa.me/+5582981169879" label="Whatsapp" target="_blank" />
         <app-section-link url="https://www.linkedin.com/in/matheus-silva1/" label="LinkedIn" target="_blank" />
     </div>
