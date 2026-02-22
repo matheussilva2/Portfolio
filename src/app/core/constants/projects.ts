@@ -11,5 +11,41 @@ export const PROJECTS: Project[] = [
         image_url: "/images/languages.webp",
         description: "BBBBBBB",
         tags: ["AAAA", "BBBB", "CCCC", "DDDDD"]
-    }
+    },
+    {
+        title: "AAAa",
+        image_url: "/images/languages.webp",
+        description: "BBBBBBB",
+        tags: ["AAAA", "BBBB", "CCCC", "DDDDD"]
+    },
+    {
+        title: "AAAa",
+        image_url: "/images/languages.webp",
+        description: "BBBBBBB",
+        tags: ["AAAA", "BBBB", "CCCC", "DDDDD"]
+    },
+    {
+        title: "AAAa",
+        image_url: "/images/languages.webp",
+        description: "BBBBBBB",
+        tags: ["AAAA", "BBBB", "CCCC", "DDDDD"]
+    },
+    {
+        title: "AAAa",
+        image_url: "/images/languages.webp",
+        description: "BBBBBBB",
+        tags: ["AAAA", "BBBB", "CCCC", "DDDDD"]
+    },
+    {
+        title: "AAAa",
+        image_url: "/images/languages.webp",
+        description: "BBBBBBB",
+        tags: ["AAAA", "BBBB", "CCCC", "DDDDD"]
+    },
+    {
+        title: "AAAa",
+        image_url: "/images/languages.webp",
+        description: "BBBBBBB",
+        tags: ["AAAA", "BBBB", "CCCC", "DDDDD"]
+    },
 ];
