@@ -1,11 +1,18 @@
 import { Component } from "@angular/core";
+import { SectionSmallTitle } from "../../components/shared/section-small-title/section-small-title";
+import { SectionTitle } from "../../components/shared/section-title/section-title";
+import { SectionDescription } from "../../components/shared/section-description/section-description";
+import { SectionContainer } from "../../components/shared/section-container/section-container";
+import { SectionLink } from "../../components/shared/section-link/section-link";
+import { ProjectCard } from "../../components/shared/project-card/project-card";
+import { PROJECTS } from "../../core/constants/projects";
 
 @Component({
     selector: 'app-home',
-    imports: [],
+    imports: [SectionSmallTitle, SectionTitle, SectionDescription, SectionContainer, SectionLink, ProjectCard],
     templateUrl: './home.html',
     styleUrl: './home.css'
 })
 export class Home {
-    
+    protected readonly myProjects = PROJECTS;
 }

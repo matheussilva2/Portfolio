@@ -1,0 +1,81 @@
+<app-section-container class="flex flex-col items-center h-[70vh] justify-center bg-[#030A04] text-white">
+    <app-section-small-title>Desenvolvedor Web Fullstack</app-section-small-title>
+    <app-section-title>Matheus Silva</app-section-title>
+    <app-section-description>
+        Construo interfaces... Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, non repellendus distinctio quibusdam optio atque
+    </app-section-description>
+    <div class="flex justify-center gap-2">
+        <app-section-link url="#projects" label="Projetos" />
+        <app-section-link url="#contact" label="Contato" />
+    </div>
+</app-section-container>
+
+<app-section-container class="bg-[#1C221D] text-white text-center">
+    <app-section-small-title>Trajetória</app-section-small-title>
+    <app-section-title>Construo soluções web desde o frontend até o backend</app-section-title>
+    <app-section-description>
+        Trabalho com <strong>ReactJs</strong> e <strong>Angular</strong> para interfaces que funcionam. No servidor, <strong>NodeJs</strong> e <strong>PHP</strong> fazem o trabalho pesado.
+        <br />
+        Cada projeto é feito com precisão e atenção aos detalhes que importam.
+    </app-section-description>
+    <app-section-link url="#" label="Meu Linkedin &gt;" class="mx-auto" />
+</app-section-container>
+
+<app-section-container class="d-flex flex-row items-center gap-8 md:px-16">
+    <div class="flex-1 text-center md:text-left">
+        <app-section-title>Tecnologias que uso na criação de aplicações modernas</app-section-title>
+        <app-section-description>
+            Escolho cada ferramenta com propósito. <br />
+            Uso <strong>ReactJs</strong> ou <strong>Angular</strong> para criação de aplicações com interfaces dinâmicas.
+            No backend uso <strong>NodeJS/Nest</strong> ou <strong>PHP/Laravel</strong> de acordo com as demandas da aplicação e, se necessário, microsserviços em <strong>NodeJS</strong> ou <strong>Python</strong> de acordo com a necessidade. <br />
+            Trabalho também com <strong>Google Cloud Platform (GPC)</strong>, especificamente <strong>Cloud Storage</strong>, <strong>Cloud Run</strong> para deploy e <strong>Cloud SQL</strong> para banco de dados <strong>MySQL</strong>.
+        </app-section-description>
+        
+        <app-section-link url="#" label="Meu Github &gt;" class="border-b-gray-900 mx-auto" />
+    </div>
+    <div class="flex-1">
+        <img src="/images/languages.webp" class="w-125 max-w-full rounded-md" />
+    </div>
+</app-section-container>
+
+<app-section-container id="#projects" class="text-center">
+    <app-section-small-title>Projetos</app-section-small-title>
+    <app-section-title>Trabalhos em Destaque</app-section-title>
+    
+    @for (project of myProjects; track $index) {
+        <app-project-card
+            [title]="project.title"
+            [description]="project.description"
+            [tags]="project.tags"
+            [image_url]="project.image_url"
+        />
+    }
+</app-section-container>
+
+<app-section-container>
+    <app-section-small-title>Experiências</app-section-small-title>
+    <app-section-title>Onde eu trabalhei</app-section-title>
+    <app-section-description>
+        Tenho anos de construção de soluções web. Sempre aprendendo através da contribuição.
+    </app-section-description>
+
+    <div>
+        <span>Desenvolvedor Fullstack</span>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci quia quaerat</p>
+        <div>
+            <span>Remoto</span>
+            <span>Tempo Integral</span>
+        </div>
+    </div>
+</app-section-container>
+
+<app-section-container id="#contact">
+    <app-section-title>Contato</app-section-title>
+    <app-section-description>
+        Se interessou? Entre em contato e podemos agendar uma reunião para nos conhecermos melhor!
+    </app-section-description>
+    <div class="flex justify-center gap-2">
+        <app-section-link url="#" label="Whatsapp" />
+        <app-section-link url="#" label="LinkedIn" />
+    </div>
+</app-section-container>
