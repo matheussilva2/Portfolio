@@ -4,7 +4,7 @@ import { Page } from "./components/shared/page/page";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Page],
+  imports: [Page],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
