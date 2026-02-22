@@ -9,4 +9,5 @@ export class SectionLink {
   readonly className = input<string>('', { alias: 'class' });
   readonly url = input.required<string>();
   readonly label = input.required<string>();
+  readonly anchorTarget = input<string>('', { alias: 'target' });
 }
