@@ -21,7 +21,7 @@
     <app-section-link url="#" label="Meu Linkedin &gt;" class="mx-auto" />
 </app-section-container>
 
-<app-section-container class="d-flex flex-row items-center gap-8 md:px-16">
+<app-section-container class="flex flex-row items-center gap-8 md:px-16">
     <div class="flex-1 text-center md:text-left">
         <app-section-title>Tecnologias que uso na criação de aplicações modernas</app-section-title>
         <app-section-description>
@@ -41,41 +41,50 @@
 <app-section-container id="#projects" class="text-center">
     <app-section-small-title>Projetos</app-section-small-title>
     <app-section-title>Trabalhos em Destaque</app-section-title>
-    
-    @for (project of myProjects; track $index) {
-        <app-project-card
-            [title]="project.title"
-            [description]="project.description"
-            [tags]="project.tags"
-            [image_url]="project.image_url"
-        />
-    }
-</app-section-container>
-
-<app-section-container>
-    <app-section-small-title>Experiências</app-section-small-title>
-    <app-section-title>Onde eu trabalhei</app-section-title>
-    <app-section-description>
-        Tenho anos de construção de soluções web. Sempre aprendendo através da contribuição.
-    </app-section-description>
-
-    <div>
-        <span>Desenvolvedor Fullstack</span>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci quia quaerat</p>
-        <div>
-            <span>Remoto</span>
-            <span>Tempo Integral</span>
-        </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
+        @for (project of my_projects; track $index) {
+            <app-project-card
+                [title]="project.title"
+                [description]="project.description"
+                [tags]="project.tags"
+                [image_url]="project.image_url"
+            />
+        }
     </div>
 </app-section-container>
 
-<app-section-container id="#contact">
+<app-section-container class="md:px-16">
+    <div class="text-center">
+        <app-section-small-title>Experiência</app-section-small-title>
+        <app-section-title>Onde eu trabalhei</app-section-title>
+        <app-section-description>
+            Tenho anos de construção de soluções web. Sempre aprendendo através da contribuição.
+        </app-section-description>
+    </div>
+    <div class="flex flex-row items-center gap-8 mt-15">
+        <div class="max-w-152">
+            @for (experience of my_experiences; track $index) {
+                <app-experience-card
+                    [title]="experience.title"
+                    [description]="experience.description"
+                    [location]="experience.location"
+                    [schedule]="experience.schedule"
+                />
+            }
+        </div>
+        <div class="flex-1">
+        <img src="/images/experiences.webp" class="w-125 max-w-full rounded-md" />
+    </div>
+    </div>
+</app-section-container>
+
+<app-section-container id="#contact" class="text-center">
     <app-section-title>Contato</app-section-title>
     <app-section-description>
         Se interessou? Entre em contato e podemos agendar uma reunião para nos conhecermos melhor!
     </app-section-description>
     <div class="flex justify-center gap-2">
-        <app-section-link url="#" label="Whatsapp" />
-        <app-section-link url="#" label="LinkedIn" />
+        <app-section-link url="https://wa.me/+5582981169879" label="Whatsapp" target="_blank" />
+        <app-section-link url="https://www.linkedin.com/in/matheus-silva1/" label="LinkedIn" target="_blank" />
     </div>
 </app-section-container>
