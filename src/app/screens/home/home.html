@@ -1,8 +1,11 @@
-<app-section-container class="flex flex-col items-center h-[70vh] justify-center bg-[#030A04] text-white">
+<app-section-container class="flex flex-col items-center h-[70vh] justify-center text-center bg-[#030A04] text-white">
     <app-section-small-title>Desenvolvedor Web Fullstack</app-section-small-title>
     <app-section-title>Matheus Silva</app-section-title>
     <app-section-description>
-        Construo interfaces... Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, non repellendus distinctio quibusdam optio atque
+        Programador web fullstack com amplo conhecimento teórico e prático do desenvolvimento de sites e aplicações web. <br />
+        Em minha carreira trabalhei com diversos sites (desde o desenvolvimento do zero até novas features), criação e consumo de apis e gerenciamento de aplicações no Google Cloud. <br />
+
+        Atuei com PHP e tecnologias front-end, desde utilizando linguagens puras quanto usando frameworks como Laravel, TailwindCSS, NodeJs/NestJs, Angular e NextJs.
     </app-section-description>
     <div class="flex justify-center gap-2">
         <app-section-link url="#projects" label="Projetos" />
@@ -47,7 +50,7 @@
                 [title]="project.title"
                 [description]="project.description"
                 [tags]="project.tags"
-                [image_url]="project.image_url"
+                [image_url]="project.image_url[0]"
             />
         }
     </div>
@@ -61,7 +64,7 @@
             Tenho anos de construção de soluções web. Sempre aprendendo através da contribuição.
         </app-section-description>
     </div>
-    <div class="flex flex-col md:flex-row items-center gap-8 mt-15">
+    <div class="flex flex-col md:flex-row gap-8 mt-15">
         <div class="max-w-152">
             @for (experience of my_experiences; track $index) {
                 <app-experience-card
@@ -73,8 +76,8 @@
             }
         </div>
         <div class="flex-1">
-        <img src="/images/experiences.webp" class="w-125 max-w-full rounded-md" />
-    </div>
+            <img src="/images/experiences.webp" class="w-125 max-w-full rounded-md" />
+        </div>
     </div>
 </app-section-container>
 
