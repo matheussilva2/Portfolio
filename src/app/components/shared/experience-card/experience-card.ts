@@ -10,4 +10,5 @@ export class ExperienceCard {
   readonly description = input.required<string>();
   readonly location = input.required<string>();
   readonly schedule = input.required<string>();
+  readonly date = input.required<string>();
 }

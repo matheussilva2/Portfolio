@@ -3,6 +3,7 @@ export interface Experience {
     description: string;
     location: string;
     schedule: string;
+    date: string;
 }
 
 export const EXPERIENCES: Experience[] = [
@@ -10,7 +11,8 @@ export const EXPERIENCES: Experience[] = [
         title: "Desenvolvedor Web Fullstack - Freelancer",
         description: "Atualmente estou trabalhando em projetos freelancer, analisando o contexto e demanda dos clientes para orientar o melhor projeto possível.",
         location: "Remoto",
-        schedule: "Tempo Integral"
+        schedule: "Tempo Integral",
+        date: "Set/2022 - Mai/2025"
     },
     {
         title: "Desenvolvedor Web Fullstack - GeraUp Tecnologia",
@@ -24,7 +26,8 @@ export const EXPERIENCES: Experience[] = [
                 Gerenciei a implantação e a infraestrutura na Google Cloud Platform, assegurando performance e escalabilidade.
         `,
         location: "Remoto",
-        schedule: "Tempo Integral"
+        schedule: "Tempo Integral",
+        date: "Fev/2022 - Jul/2022"
     },
     {
         title: "Desenvolvedor Web Front-end - Magnetis Investimentos",
@@ -34,7 +37,8 @@ export const EXPERIENCES: Experience[] = [
             Para o desenvolvimento das páginas foi utilizado ReactJs junto de uma framework CSS própria. Trabalhei em equipe que utiliza Scrumban como metodologia de gestão.
         `,
         location: "Remoto",
-        schedule: "Tempo Integral"
+        schedule: "Tempo Integral",
+        date: "Jan/2021 - Fev/2022"
     },
     {
         title: "Desenvolvedor Web Fullstack - UDOIS",
@@ -46,7 +50,8 @@ export const EXPERIENCES: Experience[] = [
             Nesta mesma experiência desenvolvi um projeto em Node/Express e Angular para um sistema de criação de rifas.
         `,
         location: "Remoto",
-        schedule: "Tempo Integral"
+        schedule: "Tempo Integral",
+        date: "Jan/2021 - Fev/2022"
     },
     {
         title: "Desenvolvedor Web Fullstack - Freelancer",
@@ -54,6 +59,7 @@ export const EXPERIENCES: Experience[] = [
             Desenvolvi sites utilizando PHP e tecnologias de front-end, atendendo a diversas demandas de clientes.
         `,
         location: "Remoto",
-        schedule: "Tempo Integral"
+        schedule: "Tempo Integral",
+        date: "Set/2019 - Jan/2021"
     },
 ];
