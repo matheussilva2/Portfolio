@@ -1,20 +1,20 @@
 <div class="border-t-2 border-gray-700/15 py-8">
-    <span class="text-3xl font-bold block mb-4">Desenvolvedor Fullstack</span>
-    <p class="mb-6">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus incidunt omnis perferendis est dolorum sapiente. Inventore, consequatur minima nihil ex distinctio incidunt at, quae nesciunt iusto quam fuga, in aperiam!
+    <span class="text-3xl font-bold block mb-4">{{title()}}</span>
+    <p class="mb-6 whitespace-pre-line">
+        {{description()}}
     </p>
     <div class="flex gap-6">
         <div class="flex items-center gap-1">
             <span class="material-symbols-outlined">
                 location_on
             </span>
-            <span>Remoto</span>
+            <span>{{location()}}</span>
         </div>
         <div class="flex items-center gap-1">
             <span class="material-symbols-outlined">
                 pace
             </span>
-            <span>Tempo Integral</span>
+            <span>{{schedule()}}</span>
         </div>
     </div>
 </div>
