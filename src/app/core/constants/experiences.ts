@@ -12,7 +12,7 @@ export const EXPERIENCES: Experience[] = [
         description: "Atualmente estou trabalhando em projetos freelancer, analisando o contexto e demanda dos clientes para orientar o melhor projeto possível.",
         location: "Remoto",
         schedule: "Tempo Integral",
-        date: "Set/2022 - Mai/2025"
+        date: "Jun/2025 - Atualmente"
     },
     {
         title: "Desenvolvedor Web Fullstack - GeraUp Tecnologia",
@@ -27,7 +27,7 @@ export const EXPERIENCES: Experience[] = [
         `,
         location: "Remoto",
         schedule: "Tempo Integral",
-        date: "Fev/2022 - Jul/2022"
+        date: "Set/2022 - Mai/2025"
     },
     {
         title: "Desenvolvedor Web Front-end - Magnetis Investimentos",
@@ -38,7 +38,7 @@ export const EXPERIENCES: Experience[] = [
         `,
         location: "Remoto",
         schedule: "Tempo Integral",
-        date: "Jan/2021 - Fev/2022"
+        date: "Fev/2022 - Jul/2022"
     },
     {
         title: "Desenvolvedor Web Fullstack - UDOIS",
