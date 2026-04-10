@@ -19,9 +19,11 @@ export const EXPERIENCES: Experience[] = [
             description: `
                 Na GeraUp fui responsável por cuidar de produtos existentes e desenvolvimento de novos projetos que estavam para entrar na etapa de desenvolvimento (após passar a etapa de análise de mercado).
 
+                Trabalhei a maior parte em um marketplace de produtos digitais de design (convite de festa, cartão de visita, topo de bolo, etc...) utilizando PHP/Laravel, Javascript, Bootstrap, MySQL e Google Cloud Platform.
+
                 Desenvolvi um projeto de marketplace de recursos artísticos (ex.: arte para sublimação) feito em ReactJs, NestJs, TailwindCSS e com deploy no Google Cloud Run.
 
-                Programei novos recursos para um painel que centraliza a comunicação de suporte ao cliente de todos os produtos da GeraUp. Foi usado AngularJs, NestJs, ElasticUI e Socket para comunicação do chat em tempo real dos clientes nos sites dos produtos e o painel.
+                Programei novos recursos para um painel que centraliza a comunicação de suporte ao cliente de todos os produtos da GeraUp. Foi usado ReactJs, Laravel (API), ElasticUI e Socket.IO para comunicação do chat em tempo real dos clientes nos sites dos produtos e o painel.
 
                 Gerenciei a implantação e a infraestrutura na Google Cloud Platform, assegurando performance e escalabilidade.
         `,
@@ -56,7 +58,7 @@ export const EXPERIENCES: Experience[] = [
     {
         title: "Desenvolvedor Web Fullstack - Freelancer",
         description: `
-            Desenvolvi sites utilizando PHP e tecnologias de front-end, atendendo a diversas demandas de clientes.
+            Desenvolvi alguns sites como sistema de matrícula escolar, site de anúncio de imóveis, site de anúncio de fazendas, sistema de rifa. Sempre utilizando PHP Puro, BootstrapCSS, Javascript e MySQL.
         `,
         location: "Remoto",
         schedule: "Tempo Integral",
