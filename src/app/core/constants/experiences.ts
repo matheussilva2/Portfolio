@@ -15,7 +15,7 @@ export const EXPERIENCES: Experience[] = [
         date: "Jun/2025 - Atualmente"
     },
     {
-        title: "Desenvolvedor Web Fullstack - GeraUp Tecnologia",
+        title: "Desenvolvedor Web Fullstack Pleno - GeraUp Tecnologia",
             description: `
                 Na GeraUp fui responsável por cuidar de produtos existentes e desenvolvimento de novos projetos que estavam para entrar na etapa de desenvolvimento (após passar a etapa de análise de mercado).
 
@@ -32,7 +32,7 @@ export const EXPERIENCES: Experience[] = [
         date: "Set/2022 - Mai/2025"
     },
     {
-        title: "Desenvolvedor Web Front-end - Magnetis Investimentos",
+        title: "Desenvolvedor Web Front-end Júnior - Magnetis Investimentos",
         description: `
             Na Magnetis desenvolvi páginas para o site do aplicativo de investimentos. Fiz landing pages para as campanhas de marketing e atualizações na página institucional.
 
@@ -43,7 +43,7 @@ export const EXPERIENCES: Experience[] = [
         date: "Fev/2022 - Jul/2022"
     },
     {
-        title: "Desenvolvedor Web Fullstack - UDOIS",
+        title: "Desenvolvedor Web Fullstack Júnior - UDOIS",
         description: `
             No produto Udois fui responsável por manter o funcionamento do projeto e adicionar novas funcionalidades. Neste projeto trabalhei com Laravel, JQuery, BootstrapCSS e Google Cloud.
 
