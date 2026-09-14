@@ -1,0 +1,166 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Design system — "Playful Mono Stack"
+ * Space Grotesk (display) + Inter (body), ink/paper base with
+ * brand (coral), accent (blue), sun (yellow) and mint highlights.
+ * All colors in oklch, light + dark themes.
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+
+  --font-display: var(--font-family-display);
+  --font-body: var(--font-family-body);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-brand: var(--brand);
+  --color-brand-foreground: var(--brand-foreground);
+  --color-sun: var(--sun);
+  --color-mint: var(--mint);
+  --color-soft: var(--soft);
+  --color-ink: var(--ink);
+  --color-paper: var(--paper);
+}
+
+:root {
+  --radius: 1rem;
+  --font-family-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-family-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --background: oklch(0.973 0.005 95);
+  --foreground: oklch(0.19 0.007 285);
+  --ink: oklch(0.19 0.007 285);
+  --paper: oklch(0.973 0.005 95);
+
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.19 0.007 285);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.19 0.007 285);
+
+  --primary: oklch(0.19 0.007 285);
+  --primary-foreground: oklch(0.973 0.005 95);
+  --secondary: oklch(0.93 0.01 95);
+  --secondary-foreground: oklch(0.19 0.007 285);
+  --muted: oklch(0.93 0.01 95);
+  --muted-foreground: oklch(0.45 0.01 285);
+  --accent: oklch(0.55 0.23 265);
+  --accent-foreground: oklch(0.99 0 0);
+  --destructive: oklch(0.58 0.22 27);
+  --destructive-foreground: oklch(0.99 0 0);
+
+  --border: oklch(0.19 0.007 285 / 12%);
+  --input: oklch(0.19 0.007 285 / 20%);
+  --ring: oklch(0.66 0.22 32);
+
+  --brand: oklch(0.66 0.22 32);
+  --brand-foreground: oklch(0.99 0 0);
+  --sun: oklch(0.84 0.17 85);
+  --mint: oklch(0.69 0.14 168);
+  --soft: oklch(0.93 0.01 95);
+}
+
+.dark {
+  --background: oklch(0.17 0.008 285);
+  --foreground: oklch(0.96 0.004 95);
+  --ink: oklch(0.96 0.004 95);
+  --paper: oklch(0.17 0.008 285);
+
+  --card: oklch(0.22 0.009 285);
+  --card-foreground: oklch(0.96 0.004 95);
+  --popover: oklch(0.22 0.009 285);
+  --popover-foreground: oklch(0.96 0.004 95);
+
+  --primary: oklch(0.96 0.004 95);
+  --primary-foreground: oklch(0.17 0.008 285);
+  --secondary: oklch(0.27 0.01 285);
+  --secondary-foreground: oklch(0.96 0.004 95);
+  --muted: oklch(0.27 0.01 285);
+  --muted-foreground: oklch(0.72 0.012 285);
+  --accent: oklch(0.66 0.19 265);
+  --accent-foreground: oklch(0.14 0.01 285);
+  --destructive: oklch(0.65 0.2 27);
+  --destructive-foreground: oklch(0.99 0 0);
+
+  --border: oklch(0.96 0.004 95 / 22%);
+  --input: oklch(0.96 0.004 95 / 26%);
+  --ring: oklch(0.7 0.19 32);
+
+  --brand: oklch(0.7 0.19 32);
+  --brand-foreground: oklch(0.15 0.01 285);
+  --sun: oklch(0.85 0.16 85);
+  --mint: oklch(0.74 0.13 168);
+  --soft: oklch(0.27 0.01 285);
+}
+
+@utility shadow-hard {
+  box-shadow: 5px 5px 0 0 var(--color-foreground);
+}
+
+@utility shadow-hard-sm {
+  box-shadow: 3px 3px 0 0 var(--color-foreground);
+}
+
+@keyframes bob {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-3deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(3deg);
+  }
+}
+
+@utility animate-bob {
+  animation: bob 6s ease-in-out infinite;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background-color: color-mix(in oklab, var(--color-brand) 25%, transparent);
+  }
+}
