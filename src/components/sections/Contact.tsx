@@ -42,7 +42,7 @@ export function Contact() {
               href={link.href}
               target={link.href.startsWith("http") ? "_blank" : undefined}
               rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
-              className="shadow-hard-sm flex items-center gap-4 rounded-2xl border-2 border-foreground bg-background p-4 transition-all hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none"
+              className="shadow-hard-sm flex min-w-0 items-center gap-4 overflow-hidden rounded-2xl border-2 border-foreground bg-background p-4 transition-all hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none"
             >
               <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-brand text-brand-foreground">
                 <link.icon className="h-5 w-5" aria-hidden="true" />
